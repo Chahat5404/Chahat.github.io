@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flowers Shop</title>
+	<style>
+
+		html{
+			background-color: #fa86c4;
+		}
+
+		p{
+			font-family: cursive;
+			font-weight: italic;
+			font-size: 30px;
+
+		}
+
+		h1{
+			position: relative;
+			font-family: Algerian;
+			left: 30px;
+		}
+
+		body{
+			position: relative;
+			height: 900px;
+			width: 350px;
+			border: dotted black;
+			margin: 25px;
+			padding: 20px;
+			right: -200px;
+			background-color: fe7d6a;
+		}
+
+		.P{
+			position: relative;
+			top: -70px;
+			font-size: 15px;
+			color: fc9483;
+		}
+
+		.B1{
+			position: relative;
+			left: 250px;
+			top: -60px;
+			font-family: cursive;
+			font-weight: bold;
+		}
+
+		.B2{
+			position: relative;
+			left: 250px;
+			top: -60px;
+			font-family: cursive;
+			font-weight: bold;
+		}
+
+		.B3{
+			position: relative;
+			left: 250px;
+			top: -60px;
+			font-family: cursive;
+			font-weight: bold;
+		}
+
+		.B4{
+			position: relative;
+			left: 250px;
+			top: -60px;
+			font-family: cursive;
+			font-weight: bold;
+		}
+
+		.B5{
+			position: relative;
+			left: 250px;
+			top: -80px;
+			font-family: cursive;
+			font-weight: bold;
+		}
+
+		.B6{
+			position: relative;
+			left: 0px;
+			top: 60px;
+			font-family: cursive;
+			font-weight: bold;
+			font-size: 30px;
+		}
+
+		aside h1{
+			position: relative;
+			left: 40px;
+			top: -720px;
+			font-size: 25px;
+		}
+
+		aside p{
+			position: relative;
+			left: 1px;
+			font-size: 25px;
+			top: -700px;
+
+		}
+
+		aside{
+			position: relative;
+			height: 400px;
+			width: 300px;
+            border: 3px;
+            margin: 20px;
+            padding: 20px;
+            left: 700px;
+            top: -100px;
+		}
+
+		
+
+		table{
+			position: relative;
+			margin-top: -700px;
+			left: 50px;
+			width: 350px;
+			height: 800px;
+		}
+
+		td{
+			position: relative;
+			border: solid black;
+			padding: 15px;
+			text-align: right;
+
+		}
+
+		nav .F{
+			position: relative;
+			right: -400px;
+			top: -1280px;
+			
+		}
+
+		nav .rose{
+			position: relative;
+			right: -480px;
+			top: -1260px;
+			
+		}
+
+		nav .iris{
+			position: relative;
+			right: -480px;
+			top: -1250px;
+			
+		}
+
+		nav .daffodil{
+			position: relative;
+			right: -480px;
+			top: -1240px;
+			
+		}
+
+		nav .jasmine{
+			position: relative;
+			right: -480px;
+			top: -1230px;
+			
+		}
+
+		nav .lily{
+			position: relative;
+			right: -480px;
+			top: -1220px;
+			
+		}
+
+
+	</style>
+	<script src="custom.js"></script>
+</head>
+<body>
+	<main>
+		<h1>Welcome to the Flower Shop!!!</h1>
+
+		<p>Rose($3):- <text id="V1"></text></p>
+		<button class="B1" onclick="X1()">Quantity</button>
+		
+
+		<p>Iris($4):- <text id="V2"></text></p>
+		<button class="B2" onclick="X2()">Quantity</button>
+		
+
+		<p>Daffodil($5):- <text id="V3"></text></p>
+		<button class="B3" onclick="X3()">Quantity</button>
+		
+
+		<p>Jasmine($6):- <text id="V4"></text></p>
+		<button class="B4" onclick="X4()">Quantity</button>
+		
+
+		<p>Lily($7):- <text id="V5"></text></p>
+		<button class="B5" onclick="X5()">Quantity</button>
+		
+
+
+        <button class="B6" onclick="Check();gst();">Checkout</button>
+
+	</main>
+
+	<aside>
+		<h1>Here is your Receipt!</h1>
+		<p>Name: <text id="V6"></p>
+			<table border="1">
+				<tr>
+					<td>Flowers</td><td>Number of flowers</td><td>Price</td>
+				</tr>
+
+				<tr>
+					<td>Rose</td>
+					<td id="vA"></td><td id="R"></td>
+				</tr>
+
+				<tr>
+					<td>Iris</td>
+					<td id="vB"></td><td id="I"></td>
+				</tr>
+
+				<tr>
+					<td>Daffodil</td>
+					<td id="vC"></td><td id="D"></td>
+				</tr>
+
+				<tr>
+					<td>Jasmine</td>
+					<td id="vD"></td><td id="J"></td>
+				</tr>
+
+				<tr>
+					<td>Lily</td>
+					<td id="vE"></td><td id="L"></td>
+				</tr>
+
+                <tr>
+                <td>PRICE (Before tax)</td>
+				<td>-</td><td id="sum"></td>
+                </tr>
+                 
+                <tr>
+                <td>GST(13%)</td>   <td>-</td>  <th id="gst"></th>
+                </tr>
+
+                <tr>
+                	<td>Total</td><td id="subtotal"></td><td id="costtotal"></td>
+                </tr>
+
+            </table>
+
+	</aside>
+<nav>
+	 <img class="F" src="flowers.jpg" alt="Flowers" width= 330px>
+	 <img class="rose" src="rose.jpg" alt="Flowers" width= 200px>
+	 <img class="iris" src="iris.jpg" alt="Flowers" width= 200px>
+	 <img class="daffodil" src="daffodil.jpg" alt="Flowers" width= 200px height= 150px>
+	 <img class="jasmine" src="jasmine.jpg" alt="Flowers" width= 200px>
+	 <img class="lily" src="lily.jpg" alt="Flowers" width= 200px height= 150px> 
+
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <meta name= "viewport" content= "width = device-width, initial-scale=1">
+      <title>Calculator</title>
+      <script src="midterm.js"></script>
+      
+      <style>
+            body{
+                  background-color: pink;
+                  font-family: cursive;
+                  font-size: 20px;
+                  width: 1500px;
+            }
+
+            table{
+                  border: 2px solid;
+                  margin-top: 20px;
+                  width: 600px;
+
+            }
+
+            .cloth{
+                  font-size: 40px;
+                  position: relative;
+                  left: 535px;
+                  top: 1px;
+                  font-family: algerian;
+                  font-weight: bold;
+                }
+
+            .funds{
+                  font-size: 30px;
+                  position: relative;
+                  left: -145px;
+                  top: 70px;
+                  font-family: algerian;
+                  font-weight: bold;
+      
+                  }
+
+
+            .clothes{
+                  float: left;
+                  width: 600px;
+                  border: 2px solid black;
+                  margin: 80px 0 0 80px;
+                  padding: 20px;
+            }
+
+            .product{
+                  border: 2px solid black;
+                  width: 600px;
+                  border-radius: 10px;
+                  margin: 80px 0 0 80px;
+                  float: left;
+                  padding: 20px;
+            }
+
+
+            #pro{
+                  margin: 10px 10px;
+            }
+
+            #pro label{
+                  display: inline-block;
+                  width: 300px;
+                  vertical-align: top;
+            }
+
+            #pro input{
+                  vertical-align: top;
+                  width: 200px;
+            }
+
+            h1{
+                  text-align: center;
+                  margin: 100px 0 0 0;
+            }
+
+
+            #buy{
+                  margin:  10px 10px;
+            }
+
+            #buy label{
+                  display: inline-block;
+                  width: 300px;
+                  vertical-align: top;
+            }
+
+            #buy input{
+                  ertical-align: top;
+                  width: 200px;
+            }
+
+            #main{
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  grid-gap: 20px;
+                  margin: 20px;
+                  font-size: 20px;
+            }
+
+            button{
+                  border: 2px solid black;
+                  width: 50%;
+                 font-size: 22px;
+                 background-color: brown;
+                 color: white;
+                 font-family: cursive;
+                 padding: 10px;
+                 height: 50px;
+                }
+
+
+
+      </style>
+
+      
+ </head>
+ <body>  
+       <text class="cloth">Calculate Total Income</text>
+       <text class="funds">Input &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Output</text>
+
+       <div id ="main">
+            <article class="clothes">
+
+                 <div id="pro">
+                     <label for="name">Name*:</label>
+                     <input type="text" placeholder="Name" id="name" name="name">
+               </div>
+
+               <div id="pro">
+                     <label for="num">Phone Number*:</label>
+                     <input type="text" placeholder="123-123-1234" id="num" name="num">
+               </div>
+
+               <div id="pro">
+                     <label for="email">Email ID*:</label>
+                     <input type="email" placeholder="email address" id="email" name="email">
+               </div>
+
+               <div id="pro">
+                     <label for="inc">Employment Income*:</label>
+                     <input type="text" placeholder="$" id="inc" name="inc">
+               </div>
+
+               <div id="pro">
+                     <label for="oth">Other Income</label>
+                     <input type="text" placeholder="$" id="oth" name="oth">
+               </div>
+
+               <div id="pro">
+                     <label for="tax">Income Taxes Paid*:</label>
+                     <input type="text" placeholder="$" id="tax" name="tax">
+               </div>
+
+            <button id="submit" onclick="result();">Calculate</button>
+            <p id="error"></p>
+            
+      </article>
+
+      <article class="product">
+            <p id="formResult"></p>
+      </article>
+
+</body>
+
+</html>
+            
+
+           
+        
